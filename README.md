@@ -2,9 +2,6 @@
 
 Este proyecto pretender crear los temas vistos en la asignatura "Análisis Numérico" de la universidad, escrito en el lenguaje de programación MATLAB.
 
-### Polinomios a funciones elementales:
-- [ ] Serie de Taylor y Maclaurin
-
 ### Solución de ecuaciones no lineales:
 - [ ] Método de bisección (Cerrado)
 - [ ] Método de la falsa posición (Cerrado)
