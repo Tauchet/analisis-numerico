@@ -1,10 +1,6 @@
-function resultado = biseccion()
+function resultado = biseccion(func, Xi, Xs, parIteraciones, parErrorNormalizado)
 
-    f = str2sym("(x ^ 3) - (3 * x) + 5");
-    Xi = -3;
-    Xs = -2;
-    parIteraciones = 6;
-    parErrorNormalizado = -1;
+    f = str2sym(func);
 
     % Variables temporales
     numIteracion = 0;
@@ -66,5 +62,4 @@ function resultado = biseccion()
         valorAnterior = Xr;
 
     end
-
 end
