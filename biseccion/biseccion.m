@@ -1,6 +1,4 @@
-function resultado = biseccion(func, Xi, Xs, parIteraciones, parErrorNormalizado)
-
-    f = str2sym(func);
+function resultado = biseccion(f, Xi, Xs, parIteraciones, parErrorNormalizado)
 
     % Variables temporales
     numIteracion = 0;
@@ -37,18 +35,15 @@ function resultado = biseccion(func, Xi, Xs, parIteraciones, parErrorNormalizado
             elseif (fXr * fXs) < 0
                 Xi = Xr;
             elseif fXr == 0
-                disp("Se encontró la raíz");
                 break;
             end
         
         else
-            disp("Ha ocurrido un error");
-            break;
+            error("¡No se ha encontrado un cambio de signo!");
         end
 
         % Método de parada por iteraciones
         if parIteraciones > 0 && numIteracion >= parIteraciones
-            disp("stop.")
             break;
         end
 

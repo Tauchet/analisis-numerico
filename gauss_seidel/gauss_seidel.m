@@ -1,13 +1,13 @@
 % Valores iniciales
 a = [
-    [9, 2, -1]
-    [7, 8, 5]
-    [3, 4, -10]
+    [7, -3, 0]
+    [4, 9, -1]
+    [1, 0, 5]
 ];
-b = [-2, 3, 6];
+b = [11, -2, 3];
 n = length(a);
 x0 = [0, 0, 0];
-parIteraciones = 6;
+parIteraciones = 5;
 parErrorNormalizado = -1;
 
 % El resultado inicial son los valores iniciales.
@@ -85,5 +85,5 @@ while true
     
 end
 
-disp(resultado)
+disp(transpose(resultado))
 
