@@ -1,10 +1,4 @@
-function resultado = falsa_posicion()
-
-    f = str2sym("exp(x) - log(x) - 5");
-    Xi = 1;
-    Xs = 2;
-    parIteraciones = 6;
-    parErrorNormalizado = -1;
+function resultado = falsa_posicion(f, Xi, Xs, parIteraciones, parErrorNormalizado)
 
     % Variables temporales
     numIteracion = 0;

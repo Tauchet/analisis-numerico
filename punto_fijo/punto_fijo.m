@@ -1,4 +1,4 @@
-function resultado = punto_fijo()
+ function resultado = punto_fijo()
     
     f = str2sym("exp(x) - log(x) - 5");
     g = str2sym("log(log(x) + 5)");
