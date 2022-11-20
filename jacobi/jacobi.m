@@ -8,6 +8,7 @@ function resultado = jacobi(a, b, x0, parIteraciones, parErrorNormalizado)
     % Variables temporales
     numIteracion = 0;
     
+
     while true
     
         % Aumentamos el valor para recordar que iteración estamos haciendo

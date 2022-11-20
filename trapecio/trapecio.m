@@ -6,10 +6,10 @@ function resultado = trapecio()
 
     syms x;
 
-    f = 16 - x ^ 2;
+    f = 4 * exp(-x ^ 2);
     a = 1;
     b = 3;
-    n = 4;
+    n = 12;
 
     h = (b - a) / n;
     
