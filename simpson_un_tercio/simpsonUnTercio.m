@@ -1,11 +1,4 @@
-function resultado = simpsonUnTercio()
-    
-    syms x;
-
-    f = 4 * exp(-x ^ 2);
-    a = 1;
-    b = 3;
-    n = 12;
+function resultado = simpsonUnTercio(f, a, b, n)
 
     h = (b - a) / n;
 

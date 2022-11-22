@@ -1,10 +1,4 @@
- function resultado = punto_fijo()
-    
-    f = str2sym("exp(x) - log(x) - 5");
-    g = str2sym("log(log(x) + 5)");
-    x = 1;
-    parIteraciones = 6;
-    parErrorNormalizado = -1;
+function resultado = punto_fijo(f, g, x, parIteraciones, parErrorNormalizado)
     
     dg = diff(g);
     

@@ -1,11 +1,4 @@
-function resultado = simpsonTresOctavos()
-    
-    syms x;
-
-    f = sqrt(tan(x));
-    a = 0;
-    b = 1.5;
-    n = 8;
+function resultado = simpsonTresOctavos(f, a, b, n)
 
     h = (b - a) / n;
 

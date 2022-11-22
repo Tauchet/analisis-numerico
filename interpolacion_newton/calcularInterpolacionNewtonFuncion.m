@@ -1,8 +1,8 @@
-function out = calcularInterpolacionNewtonFuncion()
+function out = calcularInterpolacionNewtonFuncion(valores)
     
     syms x;
-    valoresX = [-3, -2, 1, 3, 5];
-    valoresY = [8, 3, -3, -1, 4];
+    valoresX = valores(1, :); %[-3, -2, 1, 3, 5];
+    valoresY = valores(2, :); %[8, 3, -3, -1, 4];
     valoresB = calcularInterpolacionNewtonB(valoresX, valoresY);
     n = length(valoresX);
     

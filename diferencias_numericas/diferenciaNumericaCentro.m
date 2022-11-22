@@ -1,13 +1,6 @@
-function resultado = diferenciaNumericaCentro()
-
-    syms x;
+function resultado = diferenciaNumericaCentro(f, xi, h, precisa)
 
     n = 1;
-    precisa = true;
-
-    f = x ^ 9;
-    h = 0.1;
-    xi = 1;
 
     % Derivadas por método simple hacía adelante
     funciones_simples = [

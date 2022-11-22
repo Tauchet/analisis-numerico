@@ -1,10 +1,6 @@
-function resultado = newton_raphson()
+function resultado = newton_raphson(f, x, parIteraciones, parErrorNormalizado)
     
-    f = str2sym("(x ^ 3) - (3 * x) + 5");
     df = diff(f);
-    x = -3;
-    parIteraciones = 0;
-    parErrorNormalizado = 1;
 
     % Variables temporales
     numIteracion = 0;

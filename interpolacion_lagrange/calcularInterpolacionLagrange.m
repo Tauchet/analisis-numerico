@@ -1,8 +1,8 @@
-function out = calcularInterpolacionLagrange()
+function out = calcularInterpolacionLagrange(valores)
 
     syms x;
-    valoresX = [-3, -1, 2, 4, 7];
-    valoresY = [2, 7, -2, 5, 8];
+    valoresX = valores(1, :);%[-3, -1, 2, 4, 7];
+    valoresY = valores(2, :);%[2, 7, -2, 5, 8];
     n = length(valoresX);
 
     out = 0;

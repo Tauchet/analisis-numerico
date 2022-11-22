@@ -2,14 +2,7 @@
 % que está de la siguiente manera:
 % [resultado, errorReal, errorTruncamiento]
 
-function resultado = trapecio()
-
-    syms x;
-
-    f = 4 * exp(-x ^ 2);
-    a = 1;
-    b = 3;
-    n = 12;
+function resultado = trapecio(f, a, b, n)
 
     h = (b - a) / n;
     
