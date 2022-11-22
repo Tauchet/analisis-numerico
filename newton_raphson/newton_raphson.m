@@ -14,30 +14,29 @@ function resultado = newton_raphson(f, x, parIteraciones, parErrorNormalizado)
         % Validamos que exista un cambio de signo
         fx = eval(subs(f, x));
         dfx = eval(subs(df, x));
-        xNext = x - (fx / dfx);
+        siguiente_x = x - (fx / dfx);
             errorNormalizado = 0;
 
             % Guardamos el registro en la tabla
             if numIteracion == 1
-                resultado = [x, fx, dfx, xNext, 0];
+                resultado = [x, fx, dfx, siguiente_x, 0];
             else
 
                 % Cálculamos el error normalizado
-                errorNormalizado = abs((xNext - valorAnterior) / xNext) * 100;
+                errorNormalizado = abs((siguiente_x - valorAnterior) / siguiente_x) * 100;
 
-                resultado(end + 1, :) = [x, fx, dfx, xNext, errorNormalizado];
+                resultado(end + 1, :) = [x, fx, dfx, siguiente_x, errorNormalizado];
             end
 
             % Guardamos el valor actual para que se calcule el error
             % normalizado en la siguiente iteración
-            valorAnterior = xNext;
+            valorAnterior = siguiente_x;
     
             % Asignamos siempre el valor encontrado a Xi
-            x = xNext;
+            x = siguiente_x;
 
         % Método de parada por iteraciones
         if parIteraciones > 0 && numIteracion >= parIteraciones
-            disp("stop.")
             break;
         end
 

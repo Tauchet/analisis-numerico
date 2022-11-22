@@ -38,7 +38,14 @@ function out = calcularInterpolacionNewtonB(x, y)
     end
 
     matriz = transpose(matriz);
-    out = matriz;
+    
+    % Cambiar a matriz de solo resultados
+    out = zeros(width(matriz), length(matriz))
+    for i = 1:width(matriz)
+        for j = 1:length(matriz)
+            out(i, j) = matriz(i, j).resultado;
+        end
+    end
 
 end
 

@@ -1,6 +1,4 @@
-function resultado = diferenciaNumericaAdelante(f, xi, h, precisa)
-
-    n = 1;
+function resultado = diferenciaNumericaAdelante(f, xi, h, precisa, n)
 
     % Derivadas por método simple hacía adelante
     funciones_simples = [

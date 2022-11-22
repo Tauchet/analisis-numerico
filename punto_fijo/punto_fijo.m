@@ -4,8 +4,7 @@ function resultado = punto_fijo(f, g, x, parIteraciones, parErrorNormalizado)
     
     % Validamos que la función g(x) converge 
     if abs(eval(subs(dg, x))) >= 1
-        disp("NO SIRVE g(x)");
-        return;
+        error("La función ingresada para g(x) no converge.");
     end
 
     % Variables temporales
@@ -42,7 +41,6 @@ function resultado = punto_fijo(f, g, x, parIteraciones, parErrorNormalizado)
 
         % Método de parada por iteraciones
         if parIteraciones > 0 && numIteracion >= parIteraciones
-            disp("stop.")
             break;
         end
 

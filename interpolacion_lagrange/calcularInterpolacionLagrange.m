@@ -3,6 +3,8 @@ function out = calcularInterpolacionLagrange(valores)
     syms x;
     valoresX = valores(1, :);%[-3, -1, 2, 4, 7];
     valoresY = valores(2, :);%[2, 7, -2, 5, 8];
+
+    
     n = length(valoresX);
 
     out = 0;

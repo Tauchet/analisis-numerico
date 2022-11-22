@@ -4,6 +4,7 @@
 function funcion = entradaFuncion(str)
 
     syms x;
+    syms y;
 
     % Validar que el texto no se encuentra vacío
     if (regexprep(str, ' +', '') == "")
